@@ -6,6 +6,7 @@
 #include <memory>
 #include <vector>
 #include "Projectile.h"
+#include "GridManager.h"
 
 // ゲーム全体で共有する"文脈（コンテキスト）"。
 // プレイヤー・敵・マップ・アイテムなどを束ね、
@@ -37,4 +38,5 @@ private:
     std::vector<std::unique_ptr<Projectile>> projectiles;
     std::vector<std::unique_ptr<Entity2D>> spawnQueue;
     Player* player;
+	GridManager gridManager;
 };

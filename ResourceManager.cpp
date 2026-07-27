@@ -24,6 +24,7 @@ void ResourceManager::LoadAll()
     LoadSound(ResourceKeys::SE_PlayerShot,  L"./Data/Sounds/PlayerShot.wav");
 
     LoadFont(ResourceKeys::Font_Title, L"./Data/Fonts/Bitcount/static/Bitcount-Light.ttf");
+
 }
 
 void ResourceManager::UnloadAll()

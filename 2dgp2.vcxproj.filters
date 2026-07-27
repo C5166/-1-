@@ -227,5 +227,8 @@
     <ClCompile Include="Explosion.cpp">
       <Filter>40_Gameplay\Actors</Filter>
     </ClCompile>
+    <ClCompile Include="GridManager.cpp">
+      <Filter>50_Map</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

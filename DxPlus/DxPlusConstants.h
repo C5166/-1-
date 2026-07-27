@@ -9,13 +9,14 @@
 namespace DxPlus
 {
     // ゲームウィンドウの設定
-    constexpr int CLIENT_WIDTH = 1280;
-    constexpr int CLIENT_HEIGHT = 720;
+    constexpr int CLIENT_WIDTH = 1920;
+    constexpr int CLIENT_HEIGHT = 1080;
 
     // 数学的な定数
     constexpr float PI = 3.14159265358979323846f;
     constexpr float Deg2Rad = PI / 180.0f; // 度数 → ラジアン変換
     constexpr float Rad2Deg = 180.0f / PI; // ラジアン → 度数変換
+	constexpr float deltaTime = 1.0f / 60.0f; // 60FPS固定のデルタタイム
 
     // その他の定数が追加される場合はここにカテゴリを追加可能
 }

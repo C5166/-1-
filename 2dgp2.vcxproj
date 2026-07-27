@@ -216,6 +216,7 @@
     <ClCompile Include="Explosion.cpp" />
     <ClCompile Include="GameContext.cpp" />
     <ClCompile Include="GameScene.cpp" />
+    <ClCompile Include="GridManager.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Projectile.cpp" />

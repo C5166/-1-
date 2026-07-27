@@ -12,16 +12,18 @@
 
 void GameContext::Init()
 {
-//    DxLib::SetMouseDispFlag(FALSE);
-	backgroundSpr = RM().GridAt(ResourceKeys::Background);
+    //  DxLib::SetMouseDispFlag(FALSE);
+    backgroundSpr = RM().GridAt(ResourceKeys::Background);
+
 }
 
 void GameContext::Reset()
 {
+    gridManager.Initialize(10, 120, 192.0f, DxPlus::Vec2(0.0f, 0.0f));
+
     entities.clear();
     entities.emplace_back(std::make_unique<Player>());
     player = static_cast<Player*>(entities.back().get());
-
 
     for (auto& e : entities)
     {
@@ -36,7 +38,8 @@ void GameContext::Reset()
 
 void GameContext::Update()
 {
-//    DxLib::SetMousePoint(DxPlus::CLIENT_WIDTH / 2, DxPlus::CLIENT_HEIGHT / 2);
+    // ★ GridManager の更新
+	gridManager.Update(DxPlus::deltaTime, player->GetPosition().y);
 
     for (auto& e : entities) e->Update();
     for (auto& p : projectiles) p->Update();
@@ -106,18 +109,26 @@ void GameContext::Update()
         spawnQueue.clear();
     }
 
-	std::wstring text = std::wstring(L"Player Position(") +
-		std::to_wstring(static_cast<int>(player->GetPosition().x)) +
-		L"," +
-		std::to_wstring(static_cast<int>(player->GetPosition().y)) +
-		L")";
-	DxPlus::Debug::SetString(text);
+    std::wstring text = std::wstring(L"Player Position(") +
+        std::to_wstring(static_cast<int>(player->GetPosition().x)) +
+        L"," +
+        std::to_wstring(static_cast<int>(player->GetPosition().y)) +
+        L")";
+    DxPlus::Debug::SetString(text);
 }
 
 void GameContext::Draw() const
 {
-	backgroundSpr->Draw({});
+    // 1. 最背面：背景描画
+    if (backgroundSpr)
+    {
+        backgroundSpr->Draw({});
+    }
 
+    // 2. 中間：ブロック群の描画（背景とプレイヤーの間に挟む）
+	gridManager.Draw(player->GetPosition().y, 1080.0f);
+
+    // 3. 最前面：プレイヤー等のエンティティ描画
     std::vector<Entity2D*> drawList{};
     for (auto& e : entities) drawList.push_back(e.get());
     for (auto& p : projectiles) drawList.push_back(p.get());
