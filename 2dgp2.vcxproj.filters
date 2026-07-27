@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="_DxPlus">
+      <UniqueIdentifier>{d4677764-36a0-4b1f-93a7-bd53ba66e1ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_DxPlus\ヘッダー ファイル">
+      <UniqueIdentifier>{4c27c443-cdd9-4baa-84ab-9bbe457307b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_DxPlus\ソース ファイル">
+      <UniqueIdentifier>{d100bef8-58f7-4da7-b0dd-63207defa94c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00_App">
+      <UniqueIdentifier>{3f1c22d6-5c89-4fc5-ad6c-30fab90ff7f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="10_Core">
+      <UniqueIdentifier>{0542908b-661b-4d36-b54f-244be341c60d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="20_Resources">
+      <UniqueIdentifier>{65288878-bc6d-4a94-ba3f-800fd7e33a30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="30_Scenes">
+      <UniqueIdentifier>{16b7afe5-a011-4c6f-9678-630a23c1226a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="30_Scenes\Base">
+      <UniqueIdentifier>{80508bd0-35a8-4392-9851-1d2bc96c2aa8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="30_Scenes\Title">
+      <UniqueIdentifier>{c2ed59a3-e4de-4844-bccb-1f0270c81c15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="30_Scenes\Game">
+      <UniqueIdentifier>{fbe44755-aa33-4a95-be7b-50f38c85741e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="30_Scenes\Result">
+      <UniqueIdentifier>{1d5fde6b-058d-4941-bb45-ba3cada56e36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="40_Gameplay">
+      <UniqueIdentifier>{950c9fa9-6c0f-41f8-b048-6abfda8fcbc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="50_Map">
+      <UniqueIdentifier>{097a2319-8c8c-43ee-980a-399ea4286a92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="40_Gameplay\Base">
+      <UniqueIdentifier>{4b6aac92-2a82-499a-9abc-8b2b419414c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="40_Gameplay\Actors">
+      <UniqueIdentifier>{5d460b9f-98a3-4805-86bf-1af077d74bd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="40_Gameplay\Physics">
+      <UniqueIdentifier>{8e7c07b8-112f-4b8f-8ffb-88fbeb47800e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="40_Gameplay\StageObjects">
+      <UniqueIdentifier>{7f946674-b388-4159-81f6-18346883422d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DxPlus\Debug.h">
+      <Filter>_DxPlus\ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="DxPlus\DxPlus.h">
+      <Filter>_DxPlus\ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="DxPlus\DxPlusConstants.h">
+      <Filter>_DxPlus\ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="DxPlus\DxWrapper.h">
+      <Filter>_DxPlus\ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="DxPlus\HighResolutionTimer.h">
+      <Filter>_DxPlus\ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="DxPlus\Input.h">
+      <Filter>_DxPlus\ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="DxPlus\InputConstants.h">
+      <Filter>_DxPlus\ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="DxPlus\InputManager.h">
+      <Filter>_DxPlus\ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="DxPlus\Primitive2D.h">
+      <Filter>_DxPlus\ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="DxPlus\Sprite.h">
+      <Filter>_DxPlus\ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="DxPlus\Text.h">
+      <Filter>_DxPlus\ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="DxPlus\TextAnimator.h">
+      <Filter>_DxPlus\ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="DxPlus\Utils.h">
+      <Filter>_DxPlus\ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="DxPlus\Vector2.h">
+      <Filter>_DxPlus\ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="DxPlus\FadeController.h">
+      <Filter>_DxPlus\ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Consts.h">
+      <Filter>10_Core</Filter>
+    </ClInclude>
+    <ClInclude Include="GameContext.h">
+      <Filter>10_Core</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceKeys.h">
+      <Filter>20_Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager.h">
+      <Filter>20_Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="ResultScene.h">
+      <Filter>30_Scenes\Result</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleScene.h">
+      <Filter>30_Scenes\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>30_Scenes\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>30_Scenes\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScene.h">
+      <Filter>30_Scenes\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity2D.h">
+      <Filter>40_Gameplay\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>40_Gameplay\Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationClip.h">
+      <Filter>40_Gameplay\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationUtil.h">
+      <Filter>40_Gameplay\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Projectile.h">
+      <Filter>40_Gameplay\Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="Collision2D.h">
+      <Filter>40_Gameplay\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Explosion.h">
+      <Filter>40_Gameplay\Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="MathUtils.h">
+      <Filter>10_Core</Filter>
+    </ClInclude>
+    <ClInclude Include="GridManager.h">
+      <Filter>50_Map</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DxPlus\Debug.cpp">
+      <Filter>_DxPlus\ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="DxPlus\DxPlus.cpp">
+      <Filter>_DxPlus\ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="DxPlus\DxWrapper.cpp">
+      <Filter>_DxPlus\ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="DxPlus\Input.cpp">
+      <Filter>_DxPlus\ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="DxPlus\InputManager.cpp">
+      <Filter>_DxPlus\ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="DxPlus\Primitive2D.cpp">
+      <Filter>_DxPlus\ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="DxPlus\Sprite.cpp">
+      <Filter>_DxPlus\ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="DxPlus\Text.cpp">
+      <Filter>_DxPlus\ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="DxPlus\TextAnimator.cpp">
+      <Filter>_DxPlus\ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="DxPlus\Utils.cpp">
+      <Filter>_DxPlus\ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="DxPlus\FadeController.cpp">
+      <Filter>_DxPlus\ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>00_App</Filter>
+    </ClCompile>
+    <ClCompile Include="GameContext.cpp">
+      <Filter>10_Core</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager.cpp">
+      <Filter>20_Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="GameScene.cpp">
+      <Filter>30_Scenes\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="ResultScene.cpp">
+      <Filter>30_Scenes\Result</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleScene.cpp">
+      <Filter>30_Scenes\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>30_Scenes\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>30_Scenes\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>40_Gameplay\Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationClip.cpp">
+      <Filter>40_Gameplay\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationUtil.cpp">
+      <Filter>40_Gameplay\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Projectile.cpp">
+      <Filter>40_Gameplay\Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="Explosion.cpp">
+      <Filter>40_Gameplay\Actors</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
